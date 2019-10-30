@@ -1,6 +1,6 @@
 class CashRegister
-  attr_accessor :discount, :items
-  attr_reader :total
+  attr_accessor :discount
+  attr_reader :total, :items
   ALL = []
   @@all = []
   
@@ -13,6 +13,6 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     self.total += price * quantity
     quantity.times do
-      @items << [title] * quantity
+      items << title
   end
 end
