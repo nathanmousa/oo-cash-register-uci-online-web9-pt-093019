@@ -1,6 +1,6 @@
 class CashRegister
-  attr_accessor :discount
-  attr_reader :total, :items
+  attr_accessor :total, :discount
+  attr_reader :items
   ALL = []
   @@all = []
   
